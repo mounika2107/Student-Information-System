@@ -1,0 +1,42 @@
+﻿@model S2G5_SISAPPLICATION.Models.Registrations
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>Registrations</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.Courses.CourseName)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Courses.CourseName)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Students.StudentFname)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Students.StudentFname)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.StudyTerms.TermName)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.StudyTerms.TermName)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.ID }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>
